@@ -12,6 +12,7 @@ app.use("/api", petRouter); // base url
 
 // const userRouter = require("./Routers/userRouter");
 
-app.listen(3000, "localhost", () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
   console.log("App is listening on port 3000");
 });
